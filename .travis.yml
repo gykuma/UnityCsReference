@@ -1,2 +1,2 @@
 language: csharp
-solution: UnityReferenceSource.sln
+os: windows
