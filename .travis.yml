@@ -3,6 +3,6 @@ solution: Projects/CSharp/UnityReferenceSource.sln
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
-  file: $TRAVIS_BUILD_DIR/artifacts
+  file: $TRAVIS_BUILD_DIR/artifacts/**
   skip_cleanup: true
   draft: true
