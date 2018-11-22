@@ -1,5 +1,8 @@
 language: csharp
 solution: Projects/CSharp/UnityReferenceSource.sln
-addons:
-  artifacts:
-    s3_region: "us-west-2"
+deploy:
+  provider: releases
+  api_key: $GITHUB_OAUTH_TOKEN
+  file: artifacts
+  skip_cleanup: true
+  draft: true
