@@ -1,4 +1,4 @@
 language: csharp
 solution: Projects/CSharp/UnityReferenceSource.sln
-deploy:
-  skip_cleanup: true
+addons:
+  artifacts: true
