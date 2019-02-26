@@ -13,8 +13,8 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: DownloadGitHubReleases@0
-  displayName: 'Download GitHub Releases'
+- task: DownloadGitHubRelease@0
+  displayName: 'Download GitHub Release'
   inputs:
     connection: 'ghconn'
     userRepository: 'gykuma/halo-test-repo'
