@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- task: DownloadGitHubReleases@0
+  displayName: 'Download GitHub Releases'
+  inputs:
+    connection: 'ghconn'
+    userRepository: 'gykuma/halo-test-repo'
+    defaultVersionType: specificVersion
+    version: 14213417
